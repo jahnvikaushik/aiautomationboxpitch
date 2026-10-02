@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI Automation Box: Sales Cheat Sheet</title>
+<style>
+:root{--bg:#f3f5f9;--card:#fff;--ink:#101a2c;--mute:#55627a;--line:#d9dfea;--acc:#2447e0;--accbg:#e7ecff;--ear:#fff3d1;--eartx:#6a4700;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1523;--card:#172136;--ink:#eaf0fb;--mute:#9aa8c2;--line:#2a3855;--acc:#8ca4ff;--accbg:#22305a;--ear:#3a2f10;--eartx:#ffd98a}}
+:root[data-theme="dark"]{--bg:#0e1523;--card:#172136;--ink:#eaf0fb;--mute:#9aa8c2;--line:#2a3855;--acc:#8ca4ff;--accbg:#22305a;--ear:#3a2f10;--eartx:#ffd98a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:980px;margin:0 auto;padding:20px 16px 48px}
+h1,h2,h3{font-family:Charter,"Iowan Old Style",Georgia,serif;line-height:1.2;margin:0}
+h1{font-size:2rem}
+h2{font-size:1.35rem;margin-bottom:10px}
+h3{font-size:1.05rem;margin-bottom:8px}
+.sub{color:var(--mute);margin:6px 0 20px;max-width:60ch}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-bottom:16px}
+.pitch{border-left:5px solid var(--acc);font-size:1.12rem}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+ul{margin:0;padding-left:1.1em}li{margin:0 0 7px}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:4px 0 12px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:2}
+.tabs button{flex:0 0 auto;font:inherit;font-weight:600;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 16px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--acc);border-color:var(--acc);color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .tabs button[aria-selected="true"]{color:#0e1523}}
+button:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.why{background:var(--accbg);border-radius:10px;padding:14px 18px;margin-bottom:16px;font-weight:600}
+.ear{background:var(--ear);color:var(--eartx);border-radius:10px;padding:14px 18px}
+.ear ul{padding-left:1.1em}
+.map{width:100%;border-collapse:collapse;font-size:.95rem}
+.map th,.map td{text-align:left;vertical-align:top;padding:9px 10px;border-top:1px solid var(--line)}
+.map th{color:var(--mute);font-weight:600;border-top:0}
+.scroll{overflow-x:auto}
+.tag{font-size:.85rem;color:var(--mute)}
+.two{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+</style>
+</head>
+<body>
+<main>
+<h1>AI Automation Box: sales cheat sheet</h1>
+<p class="sub">How to spot an AI opportunity, what to ask, what to listen for, and why this customer would buy the box.</p>
+
+<div class="card pitch"><h2>The 20-second pitch</h2>
+ChatGPT plus a digital assistant, in a box in your own office. Everyone on your team gets unlimited AI, your data never leaves your network, and you pay once instead of per person, every month.</div>
+
+<div class="two">
+<div class="card"><h3>Three things to sniff out in any customer</h3>
+<ul><li><b>Repetition:</b> the same questions, reports or chasing, done by hand.</li>
+<li><b>Documents:</b> lots of files, SOPs or contracts that people read, search or summarise.</li>
+<li><b>Sensitivity:</b> data they would not paste into a public AI tool.</li></ul>
+<p class="tag">Any one is a conversation. Two or more is a real opportunity.</p></div>
+<div class="card"><h3>Open with these, in any industry</h3>
+<ul><li>"Is anyone on your team using ChatGPT or similar today?"</li>
+<li>"What are they allowed to put into it? What are they not allowed to?"</li>
+<li>"What task does your team repeat every week that nobody enjoys?"</li></ul></div>
+</div>
+
+<h2>Pick the customer's industry</h2>
+<div class="tabs" role="tablist" id="tabs"></div>
+<section id="panel" aria-live="polite"></section>
+
+<h2>Translate features into problems</h2>
+<div class="card scroll"><table class="map">
+<tr><th>If the customer says</th><th>The box feature</th></tr>
+<tr><td>"We answer the same questions all day"</td><td><b>AI Chat + Company Knowledge:</b> staff ask, the box answers from your own SOPs and files.</td></tr>
+<tr><td>"Someone compiles this report every week"</td><td><b>Workflow Automation:</b> set up once, drafts and sends on schedule.</td></tr>
+<tr><td>"We chase people or invoices manually"</td><td><b>AI Agents:</b> hand over the whole task; it plans, acts and reports back.</td></tr>
+<tr><td>"Our output must sound like us"</td><td><b>Custom Skills:</b> teach it your tone, templates and SOPs.</td></tr>
+<tr><td>"We outsource visuals and videos"</td><td><b>Image and Video Generation:</b> made in-house on your own hardware.</td></tr>
+<tr><td>"We can't put this in the cloud"</td><td><b>On-premise, optional air-gap:</b> zero external calls, logs go to their SIEM.</td></tr>
+<tr><td>"AI subscriptions add up"</td><td><b>Pay once:</b> S$16,588 (Basic). About 1 year to break even vs ChatGPT Business for 50 users (Sep 2026 rates).</td></tr>
+</table></div>
+
+<div class="two">
+<div class="card"><h3>Easy objections</h3>
+<ul><li><b>"We already have ChatGPT / Copilot."</b> Ask what they can't put in it. The box handles that data, and cost doesn't grow per seat.</li>
+<li><b>"Is it as good as the big names?"</b> It runs strong open models, and better ones can be loaded free. Prove it on their real work in the 4 to 8 week PoC rather than arguing in a meeting.</li>
+<li><b>"Our IT is small."</b> MyRepublic installs and hands over. Staff build agents with no code, and IT controls roles.</li></ul></div>
+<div class="card"><h3>Probably not a fit yet</h3>
+<ul><li>No repetitive or document-heavy work, and no data concerns.</li>
+<li>Wants a closed frontier model specifically, with no appetite to test open models.</li>
+<li>Many staff chatting at once: a Basic box serves about 30 to 80 for interactive chat. Go Pro (S$30,988) or Expert.</li>
+<li>Needs it very fast at large scale: Expert builds take 20+ weeks. Basic and Pro ship from stock.</li></ul></div>
+</div>
+
+<div class="card"><h3>Next step to propose</h3>
+Book a short use-case workshop, then a PoC of 4 to 8 weeks running 2 to 3 live automations in their own environment. Ask for their environment specs and top use cases. Pricing and sizing are indicative until MyRepublic's AI team confirms on consultation.</div>
+</main>
+
+<script>
+var V=[
+{n:"Retail",why:"They pay people to answer the same questions and dig through product info all day. The box answers instantly, from their own files.",
+ask:["Are your staff spending a lot of time answering the same customer questions?","Do you have a lot of product information, SOPs or documents that staff need to search through?","Are there repetitive reports or admin work being done manually?"],
+ear:["\"Customers keep asking about the same things\"","\"New staff take weeks to learn the product range\"","\"Someone builds the sales report in Excel every Monday\""],
+fix:[["Repeat customer questions","Triage and draft replies in your tone, around the clock"],["Product info buried in files","Staff ask in plain English and get the answer"],["Manual reports and admin","Workflows draft reports and chase suppliers automatically"],["Outsourced product visuals","Product images and short promo clips made in-house"]]},
+{n:"Professional Services",why:"Their product is expertise, and their time goes to reading and drafting. The box does first drafts on client data that can't go to public AI.",
+ask:["Does your team spend a lot of time reviewing documents, summarising information or preparing first drafts?","Is knowledge spread across different folders, documents and people?","Are there repetitive workflows that could potentially be automated?"],
+ear:["\"Juniors spend hours summarising\"","\"Only one partner knows where that precedent is\"","\"Client confidentiality means we can't use ChatGPT\""],
+fix:[["Reviewing long documents","Summarise, compare versions and pull out key terms"],["Knowledge in people's heads","Search past projects and files with plain questions"],["Blank-page drafting","First drafts of proposals and reports from your templates"],["Confidentiality worries","Client data stays on your network"]]},
+{n:"F&B",why:"Many outlets, lots of staff turnover and constant paperwork. The box consolidates reports and gives every outlet instant answers.",
+ask:["Are managers manually consolidating outlet reports or feedback?","Do staff frequently need to refer to SOPs, menus, recipes or training materials?","Are there repetitive enquiries or administrative tasks taking up manpower?"],
+ear:["\"I spend Sunday night collating outlet numbers\"","\"Staff keep asking the same SOP questions\"","\"Reservation and catering enquiries swamp the team\""],
+fix:[["Consolidating outlet reports and feedback","Auto-compile and summarise into one weekly pack"],["Staff asking about SOPs, menus, recipes","A chat assistant answering from your own documents"],["Repetitive enquiries","Triage and reply to reservation and catering enquiries"],["Menu and promo content","Food visuals and short social clips made in-house"]]},
+{n:"Hospitality & Resorts",why:"Large, regulated operations with sensitive guest and contract data. The deck's reference customer is an integrated resort running it in its own data centre.",
+ask:["Do guest enquiries or feedback come in faster than your team can sort them?","Do you manage lots of supplier contracts, tenders or quotations?","Is there data you would not be comfortable sending to a public AI service?"],
+ear:["\"Our data can't leave the building\"","\"We compare vendor quotes by hand\"","\"Training material is scattered across departments\""],
+fix:[["Guest enquiries and feedback","Triage, answer and route around the clock"],["Contract and tender review","Summarise, compare and extract key terms"],["Compliance and data concerns","On-prem, optional air-gap, full audit log"],["Marketing content","In-house visuals and videos"]]},
+{n:"Construction & Engineering",why:"Paperwork-heavy projects: tenders, BOQs, drawings, site reports. The box reads them so engineers don't have to.",
+ask:["How long does it take to compare tenders, BOQs or supplier quotations?","Do your teams struggle to find lessons or documents from past projects?","How much time goes into site reports and progress updates?"],
+ear:["\"Three quotes, three formats, one weekend\"","\"We've done this before but can't find the file\"","\"Site reports are copy-paste every week\""],
+fix:[["Tender and BOQ comparison","Side-by-side summary with key differences"],["Reading drawings, scans and photos","Vision model interprets them"],["Lost project knowledge","Ask questions across past project files"],["Repetitive reports","Draft site and progress reports automatically"]]},
+{n:"Education",why:"Tight budgets and sensitive student data. Pay-once suits them, and unlimited use means no per-seat cost for staff and students.",
+ask:["Do staff spend time drafting the same circulars, reports or replies?","Would you want students or staff to use AI without their data going to a public service?","Do you produce lots of training or learning content?"],
+ear:["\"We worry about student data\"","\"Admin eats teaching time\"","\"Per-seat licences get expensive\""],
+fix:[["Admin and parent/student enquiries","Draft and route replies"],["Data privacy concerns","Everything stays on the school network"],["Learning content","Draft materials and generate visuals or short videos"],["Rising seat costs","Unlimited users on one purchase"]]}
+];
+var tabs=document.getElementById("tabs"),panel=document.getElementById("panel");
+function li(a){return "<ul>"+a.map(function(x){return "<li>"+x+"</li>"}).join("")+"</ul>"}
+function show(i){
+ var v=V[i],k=tabs.children;
+ for(var j=0;j<k.length;j++)k[j].setAttribute("aria-selected",j==i);
+ panel.innerHTML='<div class="why">Why they would buy: '+v.why+'</div>'+
+ '<div class="two"><div class="card"><h3>Ask these</h3>'+li(v.ask)+'</div><div class="ear"><h3>Listen for</h3>'+li(v.ear)+'</div></div>'+
+ '<div class="card scroll"><h3>Problem and what the box does</h3><table class="map"><tr><th>Their problem</th><th>What the box does</th></tr>'+
+ v.fix.map(function(r){return "<tr><td>"+r[0]+"</td><td>"+r[1]+"</td></tr>"}).join("")+'</table></div>';
+}
+V.forEach(function(v,i){var b=document.createElement("button");b.textContent=v.n;b.setAttribute("role","tab");b.onclick=function(){show(i)};tabs.appendChild(b)});
+show(0);
+</script>
+</body>
+</html>
